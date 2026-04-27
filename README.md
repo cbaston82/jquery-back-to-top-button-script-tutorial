@@ -1,13 +1,23 @@
-# jQuery Back To Top Scrip
+# jQuery Back To Top Button Script
 
-View CodePen working example <a href="https://codepen.io/imaginedesigndevelop/pen/aNPOGQ">here</a>.
+A lightweight jQuery script that adds a smooth "back to top" button to any page. The button fades in after the user scrolls down and animates back to the top on click.
 
-Quickly create a back to top button by calling the script provided.
+View a working CodePen example [here](https://codepen.io/imaginedesigndevelop/pen/aNPOGQ).
 
-1. Save the script e.g scrollToTop.js
+## Requirements
 
-2. link to the file
+- jQuery (any modern version)
 
-3. Customize button and setting to your liking
+## Usage
 
-4. Done
+1. Include jQuery on your page
+2. Add the script: `<script src="scrollToTop.js"></script>`
+3. Customize the scroll threshold, animation speed, and button styles as needed
+
+## Customization
+
+| Option | Location in script | Default |
+|---|---|---|
+| Show button after (px) | `showAt` variable | `50` |
+| Scroll animation speed (ms) | `.animate()` duration | `800` |
+| Button position / styles | `$('#top').css({...})` | Fixed, bottom-right |
